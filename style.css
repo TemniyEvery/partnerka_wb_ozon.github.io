@@ -1,0 +1,160 @@
+/* --- Общие стили и сброс --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Контейнер и структура --- */
+.container {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+/* --- Типографика --- */
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    color: #6c757d;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #0077b6; /* Синий акцент */
+    border-bottom: 2px solid #ade8f4;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #343a40;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #005f73;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #ee6c4d;
+    text-decoration: underline;
+}
+
+strong {
+    color: #000;
+}
+
+/* --- Списки --- */
+ul, ol {
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: '— ';
+}
+
+/* --- Таблица --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+thead {
+    background-color: #0077b6;
+    color: #fff;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+/* --- Кнопка CTA --- */
+.cta-button {
+    display: inline-block;
+    background-color: #e63946;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #d62828;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/* --- Адаптивность --- */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    .container {
+        padding: 15px;
+    }
+    th, td {
+        padding: 10px;
+    }
+}
